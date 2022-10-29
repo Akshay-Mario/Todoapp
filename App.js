@@ -51,7 +51,7 @@ export default function App() {
         <View style={styles.GoalsContainer}>
           {/* <ScrollView alwaysBounceVertical = {false}>
           {goallist.map((goal, i) => <View style={styles.goalitem} key={i}><Text style={styles.goaltext} >{goal}{i}</Text></View>)}
-        </ScrollView> */}
+         </ScrollView> */}
           <FlatList data={goallist} renderItem={
             (itemData) => {
               return (
@@ -71,12 +71,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 50,
+    paddingTop: 75,
     paddingHorizontal: 16,
     backgroundColor: '#ffffff',
   },
   GoalsContainer: {
-    flex: 5,
+    flex: 15,
   },
   goalitem: {
     margin: 4,
